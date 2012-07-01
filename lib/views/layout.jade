@@ -1,7 +1,8 @@
 !!!
-html
+html(lang="en")
     head
         meta(charset="utf-8")
+        meta(name="viewport",content="width=device-width, initial-scale=1.0")
         if(typeof(title)!=='undefined')
             title= title
         
@@ -14,7 +15,4 @@ html
         script(type="text/javascript",src="/js/main.js") //- main entry point
         link(rel="stylesheet", href="/style/main.css", media="all" )
     body
-        .navbar.navbar-fixed-top
-            .navbar-inner
-        .content
-            != body
+        != body
